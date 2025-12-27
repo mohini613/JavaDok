@@ -1,0 +1,33 @@
+1byte=2bit
+short: 2byte
+int=4byte
+long=8byte
+float=4byte
+double=8byte
+char=2byte
+boolean=1bit
+
+docker exec -it java-container bash : use whenevr you want to run  java programm 
+to execute commands inside container .
+
+docker exec -it java-container javac filename.java
+docker exec -it java-container java filename
+IF THIS NOT WOKR USE THIS 
+docker exec -w /workspace java-container javac FileName.java
+docker exec -w /workspace java-container java FileName
+
+
+
+How to use GIT
+
+git init # used to initialize repository
+
+git remote add origin <link of github repository> # used to link github repository with gits local repository
+
+git add <filename> # used to add file for tracking
+
+git commit -m "message here" # used to commit changes for tracking
+
+git push -u origin master # used to push changes to github repository
+
+LIST ALL RUNNING DOCKER CONTAINERS: 
