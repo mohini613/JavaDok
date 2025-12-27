@@ -19,15 +19,14 @@ docker exec -w /workspace java-container java FileName
 
 
 How to use GIT
+ git init   #Turns your folder into a Git repository.
 
-git init # used to initialize repository
+#Connect to GitHub (one time per repo) Link your local repo to a GitHub repo.
+git remote add origin <GitHub-repo-URL> #origin is the BY DEFAULT name of the remote repo.
 
-git remote add origin <link of github repository> # used to link github repository with gits local repository
+ git add <filename> #Add files for tracking 
+ #or
+ git add .  #Add all files for tracking
 
-git add <filename> # used to add file for tracking
-
-git commit -m "message here" # used to commit changes for tracking
-
-git push -u origin master # used to push changes to github repository
-
-LIST ALL RUNNING DOCKER CONTAINERS: 
+    git commit -m "your commit message"  #Commit changes with a message
+    git push -u origin master  #Push changes to the remote repo (main is the branch name)
