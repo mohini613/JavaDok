@@ -7,8 +7,17 @@ double=8byte
 char=2byte
 boolean=1bit
 
+
+
 docker exec -it java-container bash : use whenevr you want to run  java programm 
 to execute commands inside container .
+
+root@cdf18cd0482f:/workspace# #inside this your java files will be stored 
+to get inside workspace use this
+cd /workspace
+ls
+#To compile and run java program inside container use this commands
+
 
 docker exec -it java-container javac filename.java
 docker exec -it java-container java filename
@@ -16,8 +25,8 @@ IF THIS NOT WOKR USE THIS
 docker exec -w /workspace java-container javac FileName.java
 docker exec -w /workspace java-container java FileName
 
-
-
+ docker start java-conatiner   #to start container 
+ ls  #to list files use this
 How to use GIT
  git init   #Turns your folder into a Git repository.
 
